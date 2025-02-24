@@ -1,40 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+Quiz Platform
 
-## Getting Started
+Overview
 
-First, run the development server:
+The Quiz Platform is an interactive web application built with Next.js. It allows users to answer multiple-choice and numeric questions with a timer. The platform records quiz attempts using IndexedDB and displays previous scores on a results page.
 
-```bash
+Features
+
+Multiple-choice and numeric input questions.
+
+Timed quiz (30 seconds per question).
+
+Score tracking and feedback on answers.
+
+Persistent quiz history stored in IndexedDB.
+
+Results page displaying past quiz attempts.
+
+Responsive UI with Tailwind CSS.
+
+Installation and Setup
+
+Prerequisites
+
+Ensure you have the following installed:
+
+Node.js (latest LTS version recommended)
+
+npm or yarn
+
+Steps to Run Locally
+
+Clone the repository:
+
+git clone https://github.com/yourusername/quiz-platform.git
+cd quiz-platform
+
+Install dependencies:
+
+npm install
+# or
+yarn install
+
+Run the development server:
+
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Deployment
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+The app is deployed on Vercel. You can access it here:
+🔗 Live Demo
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+Code Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+pages/index.js: Main quiz component.
 
-## Learn More
+pages/results.js: Displays quiz results.
 
-To learn more about Next.js, take a look at the following resources:
+components/Quiz.js: Handles question navigation, answer selection, and scoring.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+styles/: Contains Tailwind CSS styles.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Technologies Used
 
-## Deploy on Vercel
+Next.js - React framework for server-side rendering.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Tailwind CSS - Styling framework.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+IndexedDB - Local database for storing quiz attempts.
+
+Future Improvements
+
+User authentication for personalized quiz tracking.
+
+Category-based quizzes.
+
+Leaderboard system.
+
+More detailed analytics on performance.
+
+Contributing
+
+Pull requests are welcome! Please ensure your changes maintain clean and modular code.
